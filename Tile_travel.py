@@ -13,3 +13,55 @@
 # 3,1 -> Victory!
 # 3,2 -> N,S
 # 3,3 -> W,S
+
+north = ("n" or "N")
+east = ("e" or "E")
+west = ("w" or "W")
+south = ("s" or "S")
+
+
+valid_direction = ""
+
+if x == 1 and y == 1:
+    print("You can travel: (N)orth")
+    valid_direction == north
+
+if x == 1 and y == 2:
+    print("You can travel: (N)orth or (E)ast or (S)outh")
+    valid_direction == north or east or south
+
+if x == 1 and y == 3:
+    print("You can travel: (E)ast or (S)outh")
+    valid_direction == east or south
+
+if x == 2 and y == 1:
+    print("You can travel: (N)orth")
+    valid_direction == north
+
+if x == 2 and y == 2:
+    print("You can travel: (S)outh or (W)est")
+    valid_direction == south or west
+
+if x == 2 and y == 3:
+    print("You can travel: (W)est or (E)ast")
+    valid_direction == west or east
+
+if x == 3 and y == 1:
+    print ("Victory!")
+
+if x == 3 and y == 2:
+    print("You can travel: (N)orth or (S)outh")
+    valid_direction == north or south
+
+if x == 3 and y == 3:
+    print("You can travel: (W)est or (S)outh")
+    valid_direction == west or south
+
+x = 1
+y = 1
+d = input("Direction: ")
+
+while d == valid_direction:
+
+
+
